@@ -18,23 +18,34 @@ h2{
 p{
     font-size: 20px;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+a svg:hover{
+    fill: red;
+}
 
 /* header */
 header{
     height: 100vh;
     background-image:url(IMG/backpack-mountain.jpg);
-    box-shadow: inset 0 0 0 1000px #0000009d;
+    box-shadow: inset 0 0 0 10000px #0000009d;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    position: relative;
 }
 nav{
     width: 100%;
-    position: fixed;
     top: 0%;
+    position: absolute;
 }
 ul{
     list-style: none;
@@ -49,6 +60,13 @@ svg{
     height: 2em;
     fill: white;
 }
+.header1{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* preparation */
 #preparation{
@@ -58,6 +76,10 @@ svg{
 }
 #preparation h2{
     margin: 25px;
+}
+.texte{
+    margin: auto;
+    max-width: 65%;
 }
 #preparation svg{
     margin: 50px;
@@ -80,18 +102,18 @@ svg{
 img{
     width: 40%;
 }
-#etapes h2{
+#etapes h2, .locate{
     display: inline;
-    margin-left: 10px;
-    padding-bottom: 20px;
+    margin-left: 30px;
 }
 #etapes p{
     border-top: solid;
     padding-top: 20px;
+    margin-top: 20px;
 }
-.inline{
+.destination{
     width: 50%;
-    margin: auto 20px;
+    margin: 50px;
 }
 .flex{
     display: flex;
@@ -101,6 +123,7 @@ img{
 
 /* footer */
 footer{
+    position: relative;
     background-color: #0D4A80;
 }
 .footer{
@@ -112,9 +135,20 @@ footer{
 footer h2{
     padding-bottom: 20px;
 }
-
+.block{
+    display: block;
+}
+.reseau{
+    margin: auto 20px;
+}
+.top{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    fill: rgba(255, 255, 255, 0.527);
+}
 footer p{
     text-align: center;
     padding: 10px;
-    border-top: solid rgba(255, 255, 255, 0.473);
+    border-top: solid #ffffff4f;
 }
